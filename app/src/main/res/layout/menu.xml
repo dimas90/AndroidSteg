@@ -7,154 +7,150 @@
     android:background="@drawable/menubaru">
 
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <TableRow
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/enkrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/iconencode" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="0dp"
-            android:layout_y="0px"
-            android:background="#F4A460"
-            android:ellipsize="marquee"
-            android:gravity="center"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:singleLine="false"
-            android:text="Selamat Datang di Aplikasi File Security Dengan Android Stegano"
-            android:textColor="#ff000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:typeface="sans" />
-    </TableRow>
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Encode"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+    </LinearLayout>
 
-
-    <ImageView
+    <LinearLayout
         android:id="@+id/dekrip"
-        android:layout_width="96dp"
-        android:layout_height="69dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="75dp"
-        android:layout_marginTop="130dp"
-        android:layout_x="215dp"
-        android:layout_y="93dp"
-        android:onClick="onclick"
-        android:src="@mipmap/bukadekrip1" />
-    <TextView
-        android:onClick="onclick"
-        android:id="@+id/dekrip1"
-        android:layout_width="96dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/dekrip"
-        android:layout_below="@+id/dekrip"
-        android:layout_x="85dp"
-        android:layout_y="151dp"
-        android:text="Decrypted"
-        android:textAlignment="center"
-        android:textColor="@color/abc_search_url_text_pressed" />
-
-    <ImageView
-        android:id="@+id/enkrip"
-        android:layout_width="96dp"
-        android:layout_height="69dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/dekrip"
-        android:layout_marginStart="75dp"
-        android:layout_x="215dp"
-        android:layout_y="93dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/enkrip"
+        android:clickable="true"
         android:onClick="onclick"
-        android:src="@mipmap/kuncifile" />
-    <TextView
-        android:onClick="onclick"
-        android:id="@+id/enkrip1"
-        android:layout_width="95dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/dekrip"
-        android:layout_marginStart="75dp"
-        android:layout_x="85dp"
-        android:layout_y="151dp"
-        android:text="Encrypted"
-        android:textAlignment="center"
-        android:textColor="@color/abc_search_url_text_pressed" />
+        android:orientation="horizontal" >
 
-    <ImageView
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/icondecode" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Decode"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/profile"
-        android:layout_width="96dp"
-        android:layout_height="69dp"
-        android:layout_alignStart="@+id/enkrip"
-        android:layout_alignTop="@+id/bantuan"
-        android:layout_x="81dp"
-        android:layout_y="191dp"
-        android:onClick="onclick"
-        android:src="@mipmap/itudia" />
-    <TextView
-        android:onClick="onclick"
-        android:id="@+id/profile1"
-        android:layout_width="96dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/enkrip"
-        android:layout_below="@+id/profile"
-        android:layout_x="85dp"
-        android:layout_y="151dp"
-        android:text="Profile"
-        android:textAlignment="center"
-        android:textColor="@color/abc_search_url_text_pressed" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dekrip"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:orientation="horizontal" >
 
-    <ImageView
-        android:onClick="onclick"
-          android:id="@+id/bantuan"
-          android:layout_width="96dp"
-          android:layout_height="69dp"
-          android:layout_alignParentEnd="true"
-          android:layout_alignParentTop="true"
-          android:layout_marginEnd="75dp"
-          android:layout_marginTop="280dp"
-          android:layout_x="217dp"
-          android:layout_y="189dp"
-          android:src="@mipmap/tulung" />
-    <TextView
-        android:onClick="onclick"
-        android:id="@+id/bantuan1"
-        android:layout_width="96dp"
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/iconabout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="About"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bantuan"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/dekrip"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/profile"
-        android:layout_x="85dp"
-        android:layout_y="151dp"
-        android:text="Help"
-        android:textAlignment="center"
-        android:textColor="@color/abc_search_url_text_pressed" />
+        android:clickable="true"
+        android:onClick="onclick"
+        android:orientation="horizontal" >
 
-    <ImageView
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/iconhelp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Help"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/keluar"
-        android:layout_width="96dp"
-        android:layout_height="69dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="225dp"
-        android:layout_x="151dp"
-        android:layout_y="311dp"
-        android:onClick="onclick"
-        android:src="@mipmap/gatahan" />
-
-    <TextView
-        android:id="@+id/keluar1"
-        android:layout_width="96dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/keluar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-225dp"
-        android:layout_x="85dp"
-        android:layout_y="151dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bantuan"
+        android:clickable="true"
         android:onClick="onclick"
-        android:text="Exit"
-        android:textAlignment="center"
-        android:textColor="@color/abc_search_url_text_pressed" />
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/exit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Exit"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.skripsi.androidstegano"
+    package="com.skripsi.androidsteg"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -11,75 +11,73 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Android Stegano"
+        android:label="Stegano"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.skripsi.androidsteg.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.skripsi.androidstegano.EnkripActivity">
-            android:label="Encrypt File"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:name="com.skripsi.androidsteg.splashscreen">
+            android:label=""
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
         <activity
-            android:name="com.skripsi.androidstegano.DekripActivity">
+            android:name="com.skripsi.androidsteg.EnkripActivity">
             android:label="Encrypt File"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
         <activity
-            android:name="com.skripsi.androidstegano.ProfileActivity">
+            android:name="com.skripsi.androidsteg.DekripActivity">
+            android:label="Encrypt File"
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.skripsi.androidsteg.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.skripsi.androidsteg.ProfileActivity">
             android:label="Profile"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
         <activity
-            android:name="com.skripsi.androidstegano.HelpActivity">
+            android:name="com.skripsi.androidsteg.HelpActivity">
             android:label="Help"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
         <activity
             android:name="com.skripsi.explorer.Filechoice">
             android:label="Choice File"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
         <activity
             android:name="com.skripsi.explorer.FilechoiceSisip">
             android:label="Choice File Sisip"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
+            android:parentActivityName="com.skripsi.androidsteg.MainActivity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
+                android:value="com.skripsi.androidsteg.MainActivity" />
         </activity>
-        <activity
-            android:name="com.skripsi.explorer.FileExplorer">
-            android:label="File Explorer"
-            android:parentActivityName="com.skripsi.androidstegano.MainActivity
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skripsi.androidstegano.MainActivity" />
-        </activity>
-
     </application>
 
 </manifest>

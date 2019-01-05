@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.skripsi.androidstegano.R;
+import com.skripsi.androidsteg.R;
 
 import java.util.List;
 

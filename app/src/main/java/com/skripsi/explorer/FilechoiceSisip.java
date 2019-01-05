@@ -4,14 +4,13 @@ import android.annotation.SuppressLint;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.skripsi.androidstegano.R;
+import com.skripsi.androidsteg.R;
 
 import java.io.File;
 import java.text.DateFormat;
